@@ -1,0 +1,124 @@
+<!--
+File: projects.ejs
+Name: Ruchi Patel
+StudentId: 301234579
+Date: June 6, 2022
+-->
+<%- include ("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+      <%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+ </head>
+
+  <%- include ("partials/nav") -%>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 2000px;
+      margin: auto;
+    }
+   h3 p{
+      text-align: center;
+      color:#033f4a;
+      padding-top: 10px;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    .projectimg {
+      height: 230px;
+    }
+    
+    .row {
+      margin: 8px -10px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 5px;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33%;
+    
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+    <body>
+    
+    <div class="main">
+    
+<h3><p>PROJECTS</p></h3>
+<!-- Portfolio Gallery  -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img class="projectimg" src="/images/project-1.webp" alt="project1" style="width:100%">
+      <h3>In-silico Transcriptomics Analysis</h3>
+      <p>This analysis includes RNA analysis of inhibotors against snake venom proteins using Bioinformatics tools and algorithms which is done by using advance technologies</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="projectimg" src="/images/project2.webp" alt="project2" style="width:100%">
+      <h3>Molecular Docking</h3>
+      <p>In Molecular Docking system, find the inhibitors against snake bite and check the ligand -complex bond
+        between snake venom proteins and chemical molecules. Also dock the final
+        molecule using AutoDock Tool </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="projectimg" src="/images/project3.jpg" alt="project3" style="width:100%">
+      <h3>Library Management System</h3>
+      <p>In this system book and students details are stored. The book issue and return along with the penalty.
+         Signup with third party application is integration in this system. Users have different roles and permisiions. </p>
+    </div>
+  </div>
+ <!-- END GRID -->
+</div>
+</div>
+</body>
+<%- include ("partials/footer") -%>
+</html>

@@ -1,0 +1,86 @@
+<!--
+File: nav.ejs
+Name: Ruchi Patel
+StudentId: 301234579
+Date: June 6, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+  box-sizing: border-box;
+}
+/* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 10%;
+      height: 615px;
+      background: #ccc;
+      padding: 20px;
+      color: #022a31;
+    
+    }
+  .nav-link{
+    color:#033f4a;
+  }
+
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      color:#022a31;
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 90%;
+      background-color: #f1f1f1;
+      height: 600px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+<body>
+    <nav>
+        <ul class="navbar-nav" style="color:#022a31;">
+            <li class="nav-item"  >
+              <a class="nav-link" href="/"><i class="fas fa-home"></i> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/AboutMe"><i class="fas fa-file-contract"></i> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects"><i class="fas fa-tasks"></i> Projects </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services"><i class="fas fa-users"></i> Services </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact"><i class="fas fa-phone"></i> Contact </a>
+            </li>
+          </ul>
+    </nav>
+    
+</head>
+</body>
+</html>

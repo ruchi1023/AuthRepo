@@ -1,0 +1,72 @@
+<!--
+File: services.ejs
+Name: Ruchi Patel
+StudentId: 301234579
+Date: June 6, 2022
+-->
+<%- include ("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+      <%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+  <%- include ("partials/nav") -%>
+
+<style>
+  h3{
+    color: #033f4a;
+    text-align: left;
+    margin-left: 10%;
+  }
+ h4 {
+    color: #033f4a;
+    text-align: left;
+
+  }
+  list{
+    color: #033f4a;
+    ;
+  
+  }
+  
+  .myDiv {
+    display: flex;
+    margin: 10px 10px;
+}
+.service{
+  margin-left: 100px;
+}
+</style>
+<body>
+<h3>SERVICES</h3>
+<h4> "Managing Bioinformatics tools with computer skills and Languages"</h4>
+  <hr>
+  <div class="myDiv">
+      <ul>
+        <li>Primary skills:Bioinformatics tool managment</li>
+        <li>Docking Tool:AutoDock Tool</li>
+        <li>Next generation Sequencing</li>
+        <li>Transcriptomics analysis</li>
+          <li>Source and Version Control: Git, Github</li>
+          <li>Web Programming</li>
+          <li>Programming Languages: Java, C#</li>
+          <li>Databases: Oracle</li>
+          <li>Agile Methodology</li>
+          <li>Teamwork and Collaboration</li>
+          <li>web designing: HTML, CSS</li>
+          <li>Scripting Languages: Javascript</li>
+      </ul>
+      <div>
+        <img class="service" src="/images/service.png" class="logo">
+      </div>
+  </div>
+
+
+</body>
+</html>
+<%- include ("partials/footer") -%>

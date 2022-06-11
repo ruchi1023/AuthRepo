@@ -1,0 +1,89 @@
+<!--
+File: aboutMe.ejs
+Name: Ruchi Patel
+StudentId: 301234579
+Date: June 6, 2022
+-->
+<%- include ("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  <%- include ("partials/nav") -%>
+<style>
+    .content{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h2 span{
+    color: #033f4a;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.myDiv {
+    display: flex;
+    justify-content: end;
+    margin: 20px 60px;
+}
+.impPic {
+    height: 500px;
+    width: 350px;
+}
+.p_r10 {
+    padding-right: 10px;
+}
+.center{
+    color:#033f4a;
+}
+content H3{
+    color: #033f4a;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+    
+<div class="myDiv">
+    
+    <div>
+        <img class="impPic" src="/images/Ruchi.jpeg" class="logo">
+    </div>
+    <div class="content">
+        <H3>ABOUT ME</H3>
+        <span class="title">Speciality in feild of Health Informatics and Bioinformatics</span> 
+        <h2><span>Ruchi Patel</span></h2>
+        <p>To succeed in an environment of growth and excellence through hard work, research,
+            skills, and perseverance by which I can enhance my knowledge and experience which
+            can be beneficial at both Personal as well as Organizational level.</p>
+        <a href="resume/CV-RUCHI PATEL_1.pdf" download="Ruchi resume.pdf"><i class="fas fa-download p_r10"></i>Download Resume</a>
+    </div>
+</div>
+</body> 
+</html>
+<%- include ("partials/footer") -%>

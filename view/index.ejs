@@ -1,0 +1,47 @@
+<!--
+File: index.ejs
+Name: Ruchi Patel
+StudentId: 301234579
+Date: June 6, 2022
+-->
+<!--
+this is a home page file
+-->
+<%- include ("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">  
+
+  <style>
+   p {
+     font-size: 18px;
+     padding-bottom: 10px;
+   }
+   .center{
+     color:#033f4a;
+   }
+   h2{
+    color: #033f4a;
+    text-align: center;
+    padding-top: 10px;
+   }
+  </style> 
+</head>
+
+<%- include ("partials/nav") -%>
+<div>
+  <h2>WELCOME TO MY PROFILE</h2>
+ <div class="center">
+    <img style="width: 500px; height:400px" src="/images/Bioinfo_0.png"/>
+  </div>
+  <h1 class="center padding">Live with Biology and Technology</h1>
+  <p class="center">"To succeed in life, think innovative and develope your mind towards Technology"</p>
+</div>
+
+</html>
+
+<%- include ("partials/footer") -%>

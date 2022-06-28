@@ -33,10 +33,16 @@ Date: June 6, 2022
     ;
   
   }
+  .flex-container {
+  display: flex;
+  height: 500px;
+  justify-content: right;
+}
   
   .myDiv {
     display: flex;
-    margin: 10px 10px;
+    justify-content: end ;
+    margin: 40px 60px;
 }
 .service{
   margin-left: 100px;
@@ -45,6 +51,7 @@ Date: June 6, 2022
 <body>
 <h3>SERVICES</h3>
 <h4> "Managing Bioinformatics tools with computer skills and Languages"</h4>
+<div class="flex-container">
   <hr>
   <div class="myDiv">
       <ul>
@@ -62,8 +69,9 @@ Date: June 6, 2022
           <li>Scripting Languages: Javascript</li>
       </ul>
       <div>
-        <img class="service" src="/images/service.png" class="logo">
+        <img class="service" src="/images/service.png">
       </div>
+  </div>
   </div>
 
 

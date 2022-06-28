@@ -1,7 +1,12 @@
 var app = require('./config/app');
  var express = require('express');
  var http = require('http');
+ var configDB = require('./config/db');
+ let passport = require("passport");
+ //passport config
+require("./config/passport")(passport);
 
+var db = configDB();
  
  var port = normalizePort(process.env.PORT || '4000');
  app.set('port', port);

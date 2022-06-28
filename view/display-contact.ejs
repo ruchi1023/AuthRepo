@@ -1,0 +1,45 @@
+<!-- include header -->
+<%- include('partials/header') -%>
+<!-- /include header -->
+<%- include('partials/nav') -%>
+<!-- Main Site -->
+<main id="site-main">
+  <div class="container mt-5">
+    <div class="box-nav">
+      <button type="submit" class="btn btn-color bg-dark btn-block mt-1">
+        <a href="/user/login">Login </a>         
+       </button>
+      <a href="/dashboard/add-contact" class="border-shadow btn btn-primary">
+        <span class="text-gradient"
+          >New Contact <i class="fas fa-user"></i></span>
+      </a>
+     
+      <a class="nav-link" style="display: contents;" href="/user/logout" onclick="return confirm('Are you sure?')"><button class="btn btn-primary">Logout</button></a>
+      </div>
+
+    <!-- add user form -->
+     <!-- form handling -->
+ <form action="/dashboard/api/contact" method="get" class="mt-5">
+  <table class="table ">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>@Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%- include('partials/display') -%>
+    </tbody>
+  </table>
+  </form>
+  
+  </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('partials/footer') -%>
+<!-- /include footer -->
